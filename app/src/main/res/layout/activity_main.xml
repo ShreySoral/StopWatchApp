@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/stopwatch_app"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/time"
+        android:layout_below="@id/tvTitle2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/clock_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/_00_00_00"
+        android:layout_below="@id/clock"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+id/dividerone"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="48dp"
+        android:background="?android:attr/listDivider"
+        android:layout_below="@id/clock_time" />
+
+    <Button
+        android:id="@+id/run"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/black"
+        android:text="Run"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        android:layout_below="@id/dividerone"
+        android:layout_centerHorizontal="true" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif-monospace"
+        android:text="00:00:00"
+        android:textSize="48sp"
+        android:layout_below="@id/run"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/lap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="20sp"
+        android:backgroundTint="@color/black"
+        android:text="Lap"
+        android:layout_below="@id/chronometer" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+        android:layout_below="@id/lap" />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StopWatch</string>
+    <string name="chronometer_app">Chronometer App</string>
+    <string name="stopwatch_app">Stopwatch App</string>
+    <string name="_00_00_00">00:00:00</string>
+    <string name="set_your_time">Set Your Time</string>
+    <string name="set_time">Set Time</string>
+</resources>
